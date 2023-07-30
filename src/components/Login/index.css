@@ -1,0 +1,235 @@
+.main-container {
+  min-height: 80vh;
+  width: 100%;
+}
+.BgContainer {
+  padding-top: 4%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox-input {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  cursor: pointer;
+  margin-top: 6px;
+  font-family: "roboto";
+}
+.order {
+  order: 1;
+  height: 100%;
+}
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 356px;
+  order: 0;
+  border-radius: 0px;
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.Logo {
+  display: none;
+}
+.Rectangle {
+  height: 285px;
+  width: 285px;
+  position: top relative;
+  align-self: flex-end;
+}
+
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 356px;
+  padding: 16px;
+}
+.LabelElement {
+  height: 16px;
+  width: 66px;
+  left: 0px;
+  top: 0px;
+  border-radius: nullpx;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #475569;
+  margin-bottom: 6px;
+}
+.InputElement {
+  height: 50px;
+  padding-left: 6%;
+  left: 16px;
+  top: 24px;
+  border-radius: 2px;
+  border-width: 0.1px;
+  border-style: solid;
+
+  margin-bottom: 18px;
+}
+.LoginButton {
+  width: 330px;
+  height: 45px;
+  top: 409px;
+  left: 834px;
+  border-radius: 34px;
+
+  background: linear-gradient(98.44deg, #f54874 52.42%, #ec008c 107.37%);
+  margin-bottom: 8px;
+  border: none;
+  align-self: stretch;
+  color: #ffffff;
+}
+.LargeImage {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .BgContainer {
+    flex-direction: row;
+    width: 100vw;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+  .LargeImage {
+    display: block;
+    width: 633px;
+
+    top: 176px;
+    left: 38px;
+
+    order: 0;
+    align-self: right;
+  }
+  .Rectangle {
+    display: none;
+  }
+  .LoginContainer {
+    width: 456px;
+    left: 165px;
+    top: 250px;
+    border-radius: 8px;
+
+    margin: 20px;
+    margin-left: 150px;
+  }
+  .LoginHeading {
+    width: 50%;
+    margin-right: 60px;
+    color: #000000;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+}
+.ShowPasswordBox {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center;
+  height: auto;
+  margin-bottom: 16px;
+}
+.CheckboxElement {
+  width: 20px;
+  height: 20px;
+}
+.ShowPasswordLabel {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #475569;
+  font-family: roboto;
+}
+
+.ErrorMsg {
+  height: 18px;
+  width: 273px;
+  left: 213px;
+  top: 654px;
+  border-radius: nullpx;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ef4444;
+}
+
+.LargeHeading {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  .LargeHeading {
+    display: block;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+
+    text-align: right;
+  }
+  .Logo {
+    display: block;
+  }
+  .Navbar {
+    background-image: url("https://res.cloudinary.com/dmov4v1ui/image/upload/v1690621657/Navbar_pmbhrk.png");
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .icon {
+    width: 128px;
+    height: 77px;
+    align-self: center;
+  }
+}
+
+.icon {
+  width: 128px;
+  height: 77px;
+  top: 7px;
+  left: 131px;
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    background-image: url("https://res.cloudinary.com/dmov4v1ui/image/upload/v1690621657/Navbar_pmbhrk.png");
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bottom-image {
+    width: 100%;
+    height: 212px;
+    top: 711px;
+  }
+}
+.icons {
+  align-self: center;
+  margin-top: 10px;
+}
+.icon1 {
+  font-size: 30px;
+  margin-left: 15px;
+}
