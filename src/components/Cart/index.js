@@ -53,14 +53,16 @@ class Cart extends Component {
                   />
                 </Link>
 
-                <button onClick={this.onclickLogout} className="city-select">
-                  City Select
-                  <img
-                    src="https://res.cloudinary.com/dmov4v1ui/image/upload/v1690636860/location-pin_1_zy0hgz.png"
-                    className="cart-btn-image"
-                    alt="btn"
-                  />
-                </button>
+                <Link to="/">
+                  <button onClick={this.onclickLogout} className="city-select">
+                    City Select
+                    <img
+                      src="https://res.cloudinary.com/dmov4v1ui/image/upload/v1690636860/location-pin_1_zy0hgz.png"
+                      className="cart-btn-image"
+                      alt="btn"
+                    />
+                  </button>
+                </Link>
               </div>
               {cartLength ? this.renderEmptyView() : renderCartItem()}
 

@@ -76,14 +76,16 @@ class CitySelection extends Component {
           </Link>
 
           <div>
-            <button className="cart-btn">
-              Go to Cart
-              <img
-                src="https://res.cloudinary.com/dmov4v1ui/image/upload/v1690633573/Group_28_kjgmgh.png"
-                alt="cart-btn"
-                className="cart-btn-image"
-              />
-            </button>
+            <Link to="/cart">
+              <button className="cart-btn">
+                Go to Cart
+                <img
+                  src="https://res.cloudinary.com/dmov4v1ui/image/upload/v1690633573/Group_28_kjgmgh.png"
+                  alt="cart-btn"
+                  className="cart-btn-image"
+                />
+              </button>
+            </Link>
             <button onClick={this.onclickLogout} className="logout-btn">
               Logout
             </button>

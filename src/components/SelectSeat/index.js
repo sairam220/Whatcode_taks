@@ -108,14 +108,19 @@ class SelectSeat extends Component {
                 </Link>
 
                 <div>
-                  <button onClick={this.onclickLogout} className="city-select">
-                    City Select
-                    <img
-                      src="https://res.cloudinary.com/dmov4v1ui/image/upload/v1690636860/location-pin_1_zy0hgz.png"
-                      className="cart-btn-image"
-                      alt="btn"
-                    />
-                  </button>
+                  <Link to="/">
+                    <button
+                      onClick={this.onclickLogout}
+                      className="city-select"
+                    >
+                      City Select
+                      <img
+                        src="https://res.cloudinary.com/dmov4v1ui/image/upload/v1690636860/location-pin_1_zy0hgz.png"
+                        className="cart-btn-image"
+                        alt="btn"
+                      />
+                    </button>
+                  </Link>
                   <Link to="/cart">
                     <button className="cart-btn">
                       Go to Cart
@@ -153,7 +158,7 @@ class SelectSeat extends Component {
                         className="quantity-icon"
                         onClick={this.increasQuantity36AndPrice}
                       />
-                      <p>{this.state.quantity36}</p>
+                      <p className="quantity-18">{this.state.quantity36}</p>
                       <AiOutlineMinusCircle
                         className="quantity-icon"
                         onClick={this.desreseQuantity36AndPrice}
@@ -179,7 +184,7 @@ class SelectSeat extends Component {
                         className="quantity-icon"
                         onClick={this.increasQuantity24AndPrice}
                       />
-                      <p>{this.state.quantity24}</p>
+                      <p className="quantity-18">{this.state.quantity24}</p>
                       <AiOutlineMinusCircle
                         className="quantity-icon"
                         onClick={this.desreseQuantity24AndPrice}

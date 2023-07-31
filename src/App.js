@@ -9,16 +9,7 @@ import Payment from "./components/Payment";
 
 class App extends Component {
   state = {
-    cartList: [
-      {
-        description: "36 Sq. Mt.",
-        id: "aac71f5e-94a1-428b-8e62-ca2e682dbb13",
-        imageSrc:
-          "https://res.cloudinary.com/dmov4v1ui/image/upload/v1690639718/image_7_xx3rnt.png",
-        price: 55000,
-        quantity: 1,
-      },
-    ],
+    cartList: [],
   };
 
   addCartItem = (product) => {
